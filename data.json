@@ -1,0 +1,29 @@
+{
+  "providers": {
+    "aws": {
+      "region": "us-east-2",
+      "services": {
+        "instances": [
+          {
+            "ami": "ami-085925f297f89fce1",
+            "instance_type": "t2.micro",
+            "ports": [8080],
+            "count": 1
+          }
+        ],
+        "loadBalancers" : []
+      }
+    },
+    "gcp": {
+      "region": "europe-west9-a",
+      "project": "notional-yeti-343410",
+      "services": {
+        "messaging": [
+          {
+            "topic": "test-topic"
+          }
+        ]
+      }
+    }
+  }
+}
